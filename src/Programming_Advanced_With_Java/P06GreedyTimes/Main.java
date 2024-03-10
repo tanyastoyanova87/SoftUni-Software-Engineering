@@ -19,6 +19,6 @@ public class Main {
             bag.add(item);
         }
 
-        bag.printItems(bag);
+        bag.printItems();
     }
 }

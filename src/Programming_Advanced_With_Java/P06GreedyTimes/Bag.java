@@ -1,8 +1,7 @@
 package Programming_Advanced_With_Java.P06GreedyTimes;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Bag {
     private List<Item> items;
@@ -60,6 +59,7 @@ public class Bag {
         return true;
     }
 
+
     private long getTotalAmountByType(ItemType itemType) {
         return this.items
                 .stream()
@@ -75,12 +75,36 @@ public class Bag {
                 .sum();
     }
 
-    public void printItems(Bag bag) {
-        for (Item item : bag.getItems()) {
-            System.out.printf("<%s> $%d%n", item.getItemType(), item.getAmount());
-            items.stream().map(Item::getName).forEach(p -> {
-                System.out.printf("##%s %d%n", item.getName(), item.getAmount());
-            });
+    public void printItems() {
+        Map<String, Long> totalAmountsByType = new LinkedHashMap<>();
+        for (Item item : items) {
+            String itemType = String.valueOf(item.getItemType());
+            long totalAmount = totalAmountsByType.getOrDefault(itemType, 0L) + item.getAmount();
+            totalAmountsByType.put(itemType, totalAmount);
         }
+
+        totalAmountsByType.entrySet().stream()
+                .sorted(Map.Entry.<String, Long>comparingByValue().reversed())
+                .forEachOrdered(entry -> {
+                    String itemType = entry.getKey();
+                    long totalAmount = entry.getValue();
+                    System.out.printf("<%s> $%d%n", itemType, totalAmount);
+
+                    List<Item> filteredItems = items.stream()
+                            .filter(item -> item.getItemType().toString().equals(itemType))
+                            .sorted(
+                                    Comparator.comparing(Item::getName).reversed()
+                                            .thenComparing(Item::getAmount)
+                            )
+                            .collect(Collectors.toList());
+
+                    filteredItems.forEach(item -> System.out.printf("##%s - %d%n", item.getName(), item.getAmount()));
+                });
     }
 }
+//for (Programming_Advanced_With_Java.P06GreedyTimes.Item item : bag.getItems()) {
+//            System.out.printf("<%s> $%d%n", item.getItemType(), item.getAmount());
+//                System.out.printf("##%s - %d%n", item.getName(), item.getAmount());
+//            };
+//        }
+
