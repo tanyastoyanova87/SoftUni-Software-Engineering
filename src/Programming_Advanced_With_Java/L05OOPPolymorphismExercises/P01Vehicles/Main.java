@@ -1,4 +1,4 @@
-package Programming_Advanced_With_Java.P01Vehicles;
+package Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -15,8 +15,8 @@ public class Main {
         Vehicle truck = new Truck(Double.parseDouble(truckTokens[1]), Double.parseDouble(truckTokens[2]));
 
         Map<String, Vehicle> vehicleMap = new LinkedHashMap<>();
-        vehicleMap.put("Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car", car);
-        vehicleMap.put("Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Truck", truck);
+        vehicleMap.put("Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car", car);
+        vehicleMap.put("Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Truck", truck);
 
         int n = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < n; i++) {

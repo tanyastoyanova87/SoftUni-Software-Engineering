@@ -1,4 +1,4 @@
-package Programming_Advanced_With_Java.P02VehiclesExtension;
+package Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension;
 
 public class Car extends Vehicle {
 

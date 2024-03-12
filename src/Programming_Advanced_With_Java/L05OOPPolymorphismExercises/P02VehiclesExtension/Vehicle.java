@@ -1,4 +1,4 @@
-package Programming_Advanced_With_Java.P02VehiclesExtension;
+package Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension;
 
 import java.text.DecimalFormat;
 
@@ -17,8 +17,8 @@ public class Vehicle {
 
         double neededFuel = this.fuelConsumption * distance;
         if (neededFuel > this.fuelQuantity) {
-            if (this.getClass().getSimpleName().equals("Programming_Advanced_With_Java.P02VehiclesExtension.EmptyBus")) {
-                return "Programming_Advanced_With_Java.P02VehiclesExtension.Bus needs refueling";
+            if (this.getClass().getSimpleName().equals("Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.EmptyBus")) {
+                return "Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Bus needs refueling";
             }
             return String.format("%s needs refueling", this.getClass().getSimpleName());
         }

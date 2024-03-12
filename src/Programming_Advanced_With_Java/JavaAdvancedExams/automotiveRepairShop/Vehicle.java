@@ -7,7 +7,7 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return String.format("Damage: %s, Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Vehicle: %s (%d km)", this.damage, this.VIN, this.mileage);
+        return String.format("Damage: %s, Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Vehicle: %s (%d km)", this.damage, this.VIN, this.mileage);
     }
 
     public String getVIN() {

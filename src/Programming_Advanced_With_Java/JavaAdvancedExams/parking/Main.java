@@ -8,13 +8,13 @@ public class Main {
 // Initialize entity
         Car volvo = new Car("Volvo", "XC70", 2010);
 
-// Print P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car
+// Print P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car
         System.out.println(volvo); // Volvo XC70 (2010)
 
-// Add P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car
+// Add P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car
         parking.add(volvo);
 
-// Remove P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car
+// Remove P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car
         System.out.println(parking.remove("Volvo", "XC90")); // false
         System.out.println(parking.remove("Volvo", "XC70")); // true
 
@@ -25,11 +25,11 @@ public class Main {
 
         parking.add(audi);
 
-// Get Latest P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car
+// Get Latest P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car
         Car latestCar = parking.getLatestCar();
         System.out.println(latestCar); // Peugeot 307 (2011)
 
-// Get P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car
+// Get P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car
         Car audiS4 = parking.getCar("P01CarShopP02CarShopExtended.Audi", "S4");
         System.out.println(audiS4); // P01CarShopP02CarShopExtended.Audi S4 (2005)
 

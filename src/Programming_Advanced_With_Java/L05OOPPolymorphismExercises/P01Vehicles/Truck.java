@@ -1,4 +1,4 @@
-package Programming_Advanced_With_Java.P01Vehicles;
+package Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles;
 
 public class Truck extends Vehicle {
 

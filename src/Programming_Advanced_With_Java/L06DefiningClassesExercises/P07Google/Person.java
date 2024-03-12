@@ -58,7 +58,7 @@ public class Person {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         //Company:
-        //P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car:
+        //P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car:
         //Trabant 30
         //Pokemon:
         //Electrode Electricity
@@ -68,7 +68,7 @@ public class Person {
         if (company != null) {
             builder.append(company).append("\n");
         }
-        builder.append("P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.P01Vehicles.Programming_Advanced_With_Java.P02VehiclesExtension.Car:").append("\n");
+        builder.append("P01CarShopP02CarShopExtended.P06Ferrari.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P01Vehicles.Programming_Advanced_With_Java.L05OOPPolymorphismExercises.P02VehiclesExtension.Car:").append("\n");
         if (car != null) {
             builder.append(car).append("\n");
         }
