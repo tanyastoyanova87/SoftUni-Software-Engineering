@@ -1,6 +1,6 @@
-package solid.products.food;
+package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.food;
 
-import solid.products.Product;
+import Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.Product;
 
 public abstract class Food implements Product {
     private double grams;

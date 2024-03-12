@@ -1,6 +1,4 @@
-package solid.products.food;
-
-import solid.products.Product;
+package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.food;
 
 public class Chips extends Food {
 

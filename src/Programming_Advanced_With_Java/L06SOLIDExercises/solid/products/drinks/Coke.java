@@ -1,4 +1,4 @@
-package solid.products.drinks;
+package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.drinks;
 
 public class Coke extends Drink {
 
