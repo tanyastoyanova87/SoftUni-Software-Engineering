@@ -1,4 +1,4 @@
-package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.food;
+package Programming_Advanced_With_Java.L06OOPSOLIDExercises.solid.products.food;
 
 public class Chips extends Food {
 

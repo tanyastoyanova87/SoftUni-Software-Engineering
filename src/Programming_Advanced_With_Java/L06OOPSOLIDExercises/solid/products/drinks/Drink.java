@@ -1,6 +1,6 @@
-package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.drinks;
+package Programming_Advanced_With_Java.L06OOPSOLIDExercises.solid.products.drinks;
 
-import Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.Product;
+import Programming_Advanced_With_Java.L06OOPSOLIDExercises.solid.products.Product;
 
 public abstract class Drink implements Product {
     private double milliliters;

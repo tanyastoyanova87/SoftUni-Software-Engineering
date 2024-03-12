@@ -1,6 +1,6 @@
-package Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.calculators;
+package Programming_Advanced_With_Java.L06OOPSOLIDExercises.solid.products.calculators;
 
-import Programming_Advanced_With_Java.L06SOLIDExercises.solid.products.Product;
+import Programming_Advanced_With_Java.L06OOPSOLIDExercises.solid.products.Product;
 
 import java.util.List;
 
