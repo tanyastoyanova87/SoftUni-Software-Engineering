@@ -82,7 +82,7 @@ public class P02ReVolt {
                 colMatrix = lastCol;
 
             } else if (matrix[rowMatrix][colMatrix] == 'F') {
-                System.out.println("Programming_Advanced_With_Java.P05FootballTeamGenerator.Player won!");
+                System.out.println("Programming_Advanced_With_Java.L02OOPEncapsulationExercises.P05FootballTeamGenerator.Player won!");
                 matrix[rowMatrix][colMatrix] = 'f';
                 won = true;
                 break;
@@ -108,7 +108,7 @@ public class P02ReVolt {
 
         if (!won) {
             matrix[rowMatrix][colMatrix] = 'f';
-            System.out.println("Programming_Advanced_With_Java.P05FootballTeamGenerator.Player lost!");
+            System.out.println("Programming_Advanced_With_Java.L02OOPEncapsulationExercises.P05FootballTeamGenerator.Player lost!");
         }
 
         printMatrix(matrix);

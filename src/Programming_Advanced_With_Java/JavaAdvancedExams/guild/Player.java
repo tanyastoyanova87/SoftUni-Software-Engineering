@@ -15,7 +15,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return String.format("Programming_Advanced_With_Java.P05FootballTeamGenerator.Player %s: %s%n", this.name, this.clazz) +
+        return String.format("Programming_Advanced_With_Java.L02OOPEncapsulationExercises.P05FootballTeamGenerator.Player %s: %s%n", this.name, this.clazz) +
                 String.format("Rank: %s%n", this.rank) +
                 String.format("Description: %s", this.description);
     }
