@@ -28,7 +28,7 @@ public class University {
     public String registerStudent(Student student) {
         if (this.students.size() < this.capacity) {
             if (this.students.contains(student)) {
-                return "P03StudentSystem.Student is already in the university";
+                return "Student is already in the university";
             }
             this.students.add(student);
             return String.format("Added student %s %s", student.getFirstName(), student.getLastName());
@@ -41,7 +41,7 @@ public class University {
             this.students.remove(student);
             return String.format("Removed student %s %s", student.getFirstName(), student.getLastName());
         }
-        return "P03StudentSystem.Student not found";
+        return "Student not found";
     }
 
     public Student getStudent(String firstName, String lastName) {
@@ -56,7 +56,7 @@ public class University {
     public String getStatistics() {
         StringBuilder sb = new StringBuilder();
         for (Student student : this.students) {
-            sb.append(String.format("==P03StudentSystem.Student: First Name = %s, Last Name = %s, Best Subject = %s%n",
+            sb.append(String.format("Student: First Name = %s, Last Name = %s, Best Subject = %s%n",
                     student.getFirstName(), student.getLastName(), student.getBestSubject()));
         }
         return sb.toString();
